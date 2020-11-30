@@ -10,7 +10,7 @@ a cloud build function on gcp to send slack alerts
 gcloud pubsub topics create cloud-builds
 ``` 
 
-#### create the cloud function:
+#### Create the cloud function:
   
 ```
 gcloud functions deploy Cloud-Build-Slack-Notifier --runtime python37 --trigger-topic cloud-builds --project <my-project> --set-env-vars slackToken=<slack-token>,slackChannel=<slack-channel-name>
