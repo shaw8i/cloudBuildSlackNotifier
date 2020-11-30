@@ -1,1 +1,1 @@
-# cloudFunctionSlackNotifier
+# Cloud Function Slack Notifier
