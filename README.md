@@ -1,6 +1,6 @@
 # Cloud Build Slack Notifier
 
-a cloud build function on gcp to send slack alerts 
+a cloud build function on gcp to send slack notifications 
 
 
 ## Usage
