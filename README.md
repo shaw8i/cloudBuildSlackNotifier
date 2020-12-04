@@ -15,3 +15,5 @@ gcloud pubsub topics create cloud-builds
 ```
 gcloud functions deploy Cloud-Build-Slack-Notifier --entry-point cloudFunctionTrigger --runtime python37 --trigger-topic cloud-builds --project <my-project> --set-env-vars slackToken=<slack-token>,slackChannel=<slack-channel-name>
 ```
+#### Message example:
+![Screenshot](https://github.com/shaw8i/cloudBuildSlackNotifier/blob/main/example/message-example.png)
