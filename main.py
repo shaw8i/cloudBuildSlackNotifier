@@ -28,9 +28,9 @@ def cloudFunctionTrigger(event, context):
         if source != None:
             if 'gitSource' in data['source']:
                 if(status == "WORKING"):
-                    sendDeploying(logUrl=logUrl,text="Deploying from `{0}/{1}` to AppEngine".format(data['substitutions']['REPO_NAME'],data['substitutions']['BRANCH_NAME']))
+                    sendDeploying(logUrl=logUrl,text="Deploying from `{0}/{1}`".format(data['substitutions']['REPO_NAME'],data['substitutions']['BRANCH_NAME']))
                 elif(status == "SUCCESS"):
-                    sendSuccess(logUrl=logUrl,text="Successfully Deployed from `{0}/{1}` to AppEngine".format(data['substitutions']['REPO_NAME'],data['substitutions']['BRANCH_NAME']))
+                    sendSuccess(logUrl=logUrl,text="Successfully Deployed from `{0}/{1}`".format(data['substitutions']['REPO_NAME'],data['substitutions']['BRANCH_NAME']))
                 
     else:
         print("No data found!!")
