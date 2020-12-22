@@ -59,7 +59,7 @@ def sendDeploying(logUrl,text):
     except SlackApiError as e:
         assert e.response["error"]  # str like 'invalid_auth', 'channel_not_found'
 
-def sendFailure(logUrl,details):
+def sendFailure(logUrl):
 
     client = WebClient(token=slackToken)
     try:
